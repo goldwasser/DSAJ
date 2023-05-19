@@ -2,6 +2,7 @@ package com.zybooks.dsaj.pq;
 
 import com.zybooks.dsaj.list.PositionalList;
 
+/** Sorting with a priority queue. */
 public class PQSort {
     /** Sorts sequence S, using initially empty priority queue P to produce the order. */
     public static <E> void pqSort(PositionalList<E> S, PriorityQueue<E,?> P) {

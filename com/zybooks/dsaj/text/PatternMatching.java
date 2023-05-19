@@ -11,6 +11,7 @@ import java.util.HashMap;
      pattern.charAt(k)
 */
 
+/** Implementation of several pattern-matching algorithms on character sequences. */
 public class PatternMatching {
 
     /** Returns the lowest index at which substring pattern begins in text (or else -1).*/

@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
 
+/** An adaptation of a map into a multimap, by mapping to a list of values. */
 public class HashMultimap<K,V> {
     Map<K,List<V>> map = new HashMap<>();     // the primary map
     int total = 0;                            // total number of entries in the multimap

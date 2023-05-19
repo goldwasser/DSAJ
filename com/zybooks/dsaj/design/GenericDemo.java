@@ -1,5 +1,6 @@
 package com.zybooks.dsaj.design;
 
+/** A demonstration of a generic function with a parameterized type. */
 public class GenericDemo {
     public static <T> void reverse(T[] data) {
         int low = 0, high = data.length - 1;

@@ -1,5 +1,6 @@
 package com.zybooks.dsaj.design;
 
+/** A class producing a Fibonacci progression from two starting values. */
 public class FibonacciProgression extends Progression {
 
     protected long prev;

@@ -2,6 +2,9 @@ package com.zybooks.dsaj.list;
 
 import com.zybooks.dsaj.util.Position;
 
+/**
+ * Provides an insertion sort implementation for a PositionalList.
+ */
 public class InsertionSort {
 
     /** Insertion-sort of a positional list of integers into nondecreasing order */

@@ -2,6 +2,7 @@ package com.zybooks.dsaj.stackqueue;
 
 import com.zybooks.dsaj.fundamental.CircularlyLinkedList;
 
+/** The classic Josephus problem as a Case study for a CircularQueue */
 public class Josephus {
     /** Computes the winner of the Josephus problem using a circular queue. */
     public static <E> E Josephus(CircularQueue<E> queue, int k) {

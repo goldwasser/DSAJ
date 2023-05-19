@@ -1,5 +1,6 @@
 package com.zybooks.dsaj.text;
 
+/** Demonstration of dynamic programming. */
 public class MatrixChain {
     /**
      * Returns an n-by-n matrix such that N[i][j] represents the minimum number of

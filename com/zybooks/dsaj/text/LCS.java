@@ -2,6 +2,7 @@ package com.zybooks.dsaj.text;
 
 import java.util.ArrayList;
 
+/** Algorithms for computing the longest common subsequence of two character sequences. */
 public class LCS {
 
     /** Returns table such that L[j][k] is length of LCS for X[0..j-1] and Y[0..k-1]. */

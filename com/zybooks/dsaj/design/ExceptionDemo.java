@@ -4,6 +4,7 @@ import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
 
+/** A demonstration of a try-catch structure. */
 public class ExceptionDemo {
 
     static final int DEFAULT = 100;

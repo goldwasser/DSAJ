@@ -2,6 +2,7 @@ package com.zybooks.dsaj.stackqueue;
 
 import java.util.Arrays;
 
+/** Case study for using a Stack to reverse a sequence. */
 public class ReverseWithStack {
 
     /** A generic method for reversing an array. */

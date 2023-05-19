@@ -2,6 +2,7 @@ package com.zybooks.dsaj.design;
 
 import com.zybooks.dsaj.primer.CreditCard;
 
+/** A demonstration of inheritance. */
 public class PredatoryCreditCard extends CreditCard {
     // Additional instance variable
     private double apr;                             // annual percentage rate

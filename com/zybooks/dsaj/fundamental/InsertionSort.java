@@ -1,7 +1,7 @@
 package com.zybooks.dsaj.fundamental;
 
 /**
- * Provides an insertion sort implementation.
+ * Provides an insertion sort implementation for arrays.
  */
 public class InsertionSort {
 

@@ -3,6 +3,7 @@ package com.zybooks.dsaj.tree;
 import com.zybooks.dsaj.util.Position;
 import java.util.ArrayList;
 
+/** Several applications of tree traversals. */
 public class TraversalExamples {
 
     /** Returns a string containing n spaces. */
