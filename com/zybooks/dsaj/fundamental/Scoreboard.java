@@ -1,5 +1,7 @@
 package com.zybooks.dsaj.fundamental;
 
+import com.zybooks.dsaj.fundamental.GameEntry;
+
 /** Class for storing high scores in an array in nondecreasing order. */
 public class Scoreboard {
     private GameEntry[] board;                    // array of game entries (names & scores)
@@ -37,6 +39,21 @@ public class Scoreboard {
         board[numEntries-1] = null;               // null out the old last score
         numEntries--;
         return temp;                              // return the removed object
+    }
+
+    /** Returns the capacity of the scoreboard. */
+    public int getCapacity() {
+        return board.length;
+    }
+
+    /** Returns the number of current entries stored. */
+    public int getNumEntries() {
+        return numEntries;
+    }
+
+    /** Returns the entry at index j (or null if no such entry). */
+    public GameEntry getEntry(int j) {
+        return board[j];
     }
 
     /** Returns a string representation of the high scores list. */
