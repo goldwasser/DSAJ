@@ -2,7 +2,7 @@ package com.zybooks.dsaj.fundamental;
 
 import com.zybooks.dsaj.fundamental.GameEntry;
 
-/** Class for storing high scores in an array in nondecreasing order. */
+/** Class for storing high scores in nondecreasing order within an array. */
 public class Scoreboard {
     private GameEntry[] board;                    // array of game entries (names & scores)
     private int numEntries = 0;                   // number of actual entries
@@ -12,7 +12,7 @@ public class Scoreboard {
         board = new GameEntry[capacity];
     }
 
-    /** Attempt to add a new score to the collection (if it is high enough) */
+    /** Attempts to add a new score to the collection (if it is high enough) */
     public void add(GameEntry e) {
         int newScore = e.getScore();
         // is the new entry e really a high score?
@@ -29,7 +29,7 @@ public class Scoreboard {
         }
     }
 
-    /** Remove and return the high score at index i. */
+    /** Removes and returns the high score at index i. */
     public GameEntry remove(int i) throws IndexOutOfBoundsException {
         if (i < 0 || i >= numEntries)
             throw new IndexOutOfBoundsException("Invalid index: " + i);
