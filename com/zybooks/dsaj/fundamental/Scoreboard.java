@@ -51,9 +51,9 @@ public class Scoreboard {
         return numEntries;
     }
 
-    /** Returns the entry at index j (or null if no such entry). */
-    public GameEntry getEntry(int j) {
-        return board[j];
+    /** Returns the entry at index i (or null if no such entry). */
+    public GameEntry getEntry(int i) {
+        return board[i];
     }
 
     /** Returns a string representation of the high scores list. */
