@@ -43,11 +43,11 @@ public class TicTacToe {
     /** Returns the winning player's code, or 0 to indicate a tie (or unfinished game).*/
     public int winner() {
         if (isWin(X))
-            return(X);
+            return X;
         else if (isWin(O))
-            return(O);
+            return O;
         else
-            return(0);
+            return EMPTY;
     }
 
     /** Returns a simple character string showing the current board. */
