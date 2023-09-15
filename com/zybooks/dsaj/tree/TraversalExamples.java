@@ -32,9 +32,10 @@ public class TraversalExamples {
     public static <E>
     void printPreorderLabeled(Tree<E> T, Position<E> p, ArrayList<Integer> path) {
         int d = path.size();                                            // depth equals the length of the path
-        System.out.print(spaces(2*d));                                  // print indentation, then label
-        for (int j=0; j < d; j++) System.out.print(path.get(j) + (j == d-1 ? " " : "."));
-        System.out.println(p.getElement());
+        System.out.print(spaces(2*d));                                  // print indentation
+        // next print path numbers, joined by '.' and final trailing space (e.g. "1.3.2 ")
+        for (int j=0; j < d; j++) System.out.print(path.get(j) + (j < d-1 ? "." : " "));
+        System.out.println(p.getElement());                             // now print the actual element
         path.add(1);                                                    // add path label to denote child of p
         for (Position<E> c : T.children(p)) {
             printPreorderLabeled(T, c, path);
