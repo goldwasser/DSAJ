@@ -35,10 +35,10 @@ public class TraversalExamples {
         System.out.print(spaces(2*d));                                  // print indentation, then label
         for (int j=0; j < d; j++) System.out.print(path.get(j) + (j == d-1 ? " " : "."));
         System.out.println(p.getElement());
-        path.add(1);                                                    // add path entry for first child
+        path.add(1);                                                    // add path label to denote child of p
         for (Position<E> c : T.children(p)) {
             printPreorderLabeled(T, c, path);
-            path.set(d, 1 + path.get(d));                               // increment last entry of path
+            path.set(d, 1 + path.get(d));                               // increment last label on path
         }
         path.remove(d);                                                 // restore path to its incoming state
     }
@@ -47,13 +47,13 @@ public class TraversalExamples {
     public static <E> void parenthesize(Tree<E> T, Position<E> p) {
         System.out.print(p.getElement());
         if (T.isInternal(p)) {
-            String preface = " (";                                      // this comes before first child
+            String preface = " (";                                      // opening parenthesis before first child
             for (Position<E> c : T.children(p)) {
-                System.out.print(preface);                              // determine proper punctuation
-                preface = ", ";                                         // any future passes will get comma
+                System.out.print(preface);
+                preface = ", ";                                         // any future children preceded by comma
                 parenthesize(T, c);                                     // recur on child
             }
-            System.out.print(")");
+            System.out.print(")");                                      // closing parenthesis after last child
         }
     }
 

@@ -8,7 +8,7 @@ public class FibonacciProgression extends Progression {
     /** Constructs traditional Fibonacci, starting 0, 1, 1, 2, 3, ... */
     public FibonacciProgression() { this(0, 1); }
 
-    /** Constructs generalized Fibonacci, with give first and second values. */
+    /** Constructs generalized Fibonacci, with the given first and second values. */
     public FibonacciProgression(long first, long second) {
         super(first);
         prev = second - first;     // fictitious value preceding the first

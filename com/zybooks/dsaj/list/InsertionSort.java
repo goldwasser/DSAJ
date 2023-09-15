@@ -13,7 +13,7 @@ public class InsertionSort {
         while (marker != list.last()) {
             Position<Integer> pivot = list.after(marker);
             int value = pivot.getElement();                // number to be placed
-            if (value > marker.getElement())               // pivot is already sorted
+            if (value >= marker.getElement())              // pivot is already sorted
                 marker = pivot;
             else {                                         // must relocate pivot
                 Position<Integer> walk = marker;           // find leftmost item greater than value
