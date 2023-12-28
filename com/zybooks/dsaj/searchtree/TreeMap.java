@@ -102,7 +102,7 @@ public class TreeMap<K,V> extends AbstractSortedMap<K,V> {
         }
 
         /**
-         * Performs a trinode restructoring of Position x with its parent/grandparent.
+         * Performs a trinode restructuring of Position x with its parent/grandparent.
          * Returns the Position that becomes the root of the restructured subtree.
          *
          * Assumes the nodes are in one of the following configurations:
