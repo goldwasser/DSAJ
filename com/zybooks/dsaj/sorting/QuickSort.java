@@ -26,9 +26,11 @@ class QuickSort {
             else                                   // element is greater than pivot
                 G.enqueue(element);
         }
+        
         // conquer
         quickSort(L, comp);                        // sort elements less than pivot
         quickSort(G, comp);                        // sort elements greater than pivot
+        
         // concatenate results
         while (!L.isEmpty())
             S.enqueue(L.dequeue());
