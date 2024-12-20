@@ -57,8 +57,8 @@ public class SinglyLinkedList<E> implements Cloneable {
     } //----------- end of nested Node class -----------
 
     // ---------- instance variables of SinglyLinkedList ----------
-    /** The head node of the list */
-    private Node<E> head = null;                // head node of the list (or null if empty)
+    /** The first node of the list */
+    private Node<E> head = null;                // first node of the list (or null if empty)
 
     /** The last node of the list */
     private Node<E> tail = null;                // last node of the list (or null if empty)
